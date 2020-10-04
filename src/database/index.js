@@ -2,9 +2,16 @@
  * criar a conexão da database
  */
 
-const Sequelize = require('sequelize')
-const dbConfig = require('../config/database')
+const Sequelize = require("sequelize");
+const dbConfig = require("../config/database");
 
-const connection = new Sequelize(dbConfig)
+/**
+ * Imortando model
+ */
+const User = require("../models/User");
 
-module.exports = connection
+const connection = new Sequelize(dbConfig);
+
+User.init(connection);
+
+module.exports = connection;

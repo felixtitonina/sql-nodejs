@@ -3,9 +3,9 @@
  */
 
 module.exports = {
-    dealect: 'postgres',
+    dialect: 'postgres',
     host: 'localhost',
-    username: 'server-postgres',
+    username: 'postgres',
     password: '54506083',
     database: 'sqlnode',
     define: {
